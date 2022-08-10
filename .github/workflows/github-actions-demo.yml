@@ -12,15 +12,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{matrix.node-version}}
-              - name: install modules
-              run: npm insatall
-              - name: build project
-              run: npm run build
-              - name: build storybook
-              run: npm run build:storybook
-              - name: unit test
-              run: npm run test:unit
-              - name: e2e test
-              run: npm run test:e2e
-              - name: lint code
-              run: npm run lint
+      - name: install modules
+        run: npm insatall
+      - name: build project
+        run: npm run build
+      - name: build storybook
+        run: npm run build:storybook
+      - name: unit test
+        run: npm run test:unit
+      - name: e2e test
+        run: npm run test:e2e
+      - name: lint code
+        run: npm run lint
