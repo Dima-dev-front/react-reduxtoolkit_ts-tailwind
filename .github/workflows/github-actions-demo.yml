@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: ${{matrix.node-version}}
       - name: install modules
-        run: npm insatall
+        run: npm install
       - name: build project
         run: npm run build
       - name: build storybook
