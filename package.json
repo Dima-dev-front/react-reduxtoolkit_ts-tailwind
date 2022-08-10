@@ -25,7 +25,7 @@
     "build:storybook": "node ./scriptsCICD/storybook.js",
     "test:unit": "react-scripts test",
     "test:e2e": "node ./scriptsCICD/e2e.test.js",
-    "lint": "node ./scripts/eslint.js",
+    "lint": "node ./scriptsCICD/eslint.js",
     "type:check": "node ./scriptsCICD/typecheck.js",
     "i18n:check": "node ./scriptsCICD/i18n-check.js",
     "eject": "react-scripts eject"
