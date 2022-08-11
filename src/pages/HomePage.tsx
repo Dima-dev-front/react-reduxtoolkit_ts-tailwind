@@ -28,8 +28,8 @@ const HomePage = () => {
     }
 
     return (
-        <div className='flex justify-center pt-10 mx-auto h-screen w-screen'>
-            {isError && <p className='text-center text-red-600'> Something went wrong... </p>}
+        <div className='bg-stone-200 flex justify-center pt-10 mx-auto h-screen w-screen'>
+
             <div className='relative w-[560px]'>
                 <input
                     className='border px-4 py-2 w-full h-[42px] mb-2 '
@@ -38,7 +38,7 @@ const HomePage = () => {
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                 />
-
+                {isError && <p className='text-center text-red-600'> Something went wrong... </p>}
                 {dropdown && <ul
                   className=' list-none absolute top-[42px] left-0 right-0 max-h-[200px] shadow-md bg-white overflow-y-scroll'>
                     {isLoading && <p className='text-center'>Loading...</p>}
