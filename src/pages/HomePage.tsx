@@ -28,7 +28,7 @@ const HomePage = () => {
     }
 
     return (
-        <div className='bg-stone-200 flex justify-center pt-10 mx-auto h-screen w-screen'>
+        <div className='bg-stone-200 flex justify-center pt-10 mx-auto '>
 
             <div className='relative w-[560px]'>
                 <input
